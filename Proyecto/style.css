@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.atm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+#transaction-section {
+    margin-top: 20px;
+}
+
+#atm-response {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.btn-round {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    position: relative;
+}
+
+.btn-outline-primary:hover::after,
+.btn-outline-danger:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: 70px;
+    background-color: currentColor;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-outline-primary:hover::after {
+    background-color: #0d6efd;
+}
+
+.btn-outline-danger:hover::after {
+    background-color: #dc3545;
+}
